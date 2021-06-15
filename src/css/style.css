@@ -165,7 +165,7 @@ ul.ui-marked { padding-left: 0px; margin-bottom: 20px; }
 
 ul.ui-marked > li { margin-bottom: 8px; position: relative; padding-left: 20px; }
 
-ul.ui-marked > li:before { content: ""; position: absolute; top: 0.5rem; margin-top: 0px; left: 0px; width: 8px; height: 8px; background: #01B552; border-radius: 50%; }
+ul.ui-marked > li:before { content: ""; position: absolute; top: 0.35rem; margin-top: rem; left: 0px; width: 0.5rem; height: 0.5rem; background: #465568; border-radius: 50%; }
 
 ul.ui-marked.dotted > li { padding-left: 18px; margin-bottom: 10px; }
 

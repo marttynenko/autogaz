@@ -368,12 +368,12 @@ ul.ui-marked {
 		&:before {
 			content: "";
 			position: absolute;
-			top: 0.5rem;
-			margin-top: 0px;
+			top: 0.35rem;
+			margin-top: rem;
 			left: 0px;
-			width: 8px;
-			height: 8px;
-			background: $secondary;
+			width: 0.5rem;
+			height: 0.5rem;
+			background: $font;
 			border-radius: 50%;
 
 		}
