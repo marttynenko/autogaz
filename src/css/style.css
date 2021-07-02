@@ -704,9 +704,9 @@ img.slick-loading { opacity: 0; transform: scale(0.95); }
 
 header.header { background: #FFF; }
 
-.header-logo { margin-right: 35px; }
+.header-logo { margin-right: 30px; }
 
-.logo-link { height: 100px; padding: 10px; background: #131A2A; }
+.logo-link { width: 120px; height: 100px; padding: 10px; background: #131A2A; }
 
 .logo-link img { max-height: 80px; }
 

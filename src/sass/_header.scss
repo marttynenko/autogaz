@@ -3,10 +3,11 @@ header.header {
 }
 
 .header-logo {
-	margin-right: 35px;
+	margin-right: 30px;
 }
 .logo {
 	&-link {
+		width: 120px;
 		height: 100px;
 		padding: 10px;
 		background: #131A2A;
