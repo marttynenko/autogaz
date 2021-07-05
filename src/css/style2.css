@@ -762,9 +762,10 @@
 
 
 .popup-for-callback-inside {
-  width: 480px;
+  width: 96%;
+  max-width: 480px;
   margin: 20px auto;
-
+  position: relative;
 }
 
 .mfp-close-btn-in .mfp-close {

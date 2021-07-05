@@ -117,8 +117,8 @@
         </div>
       </div>
       <div class="popup-for-callback">
-        <form id="popup-form" class="mfp-hide">
-          <div class="map-block-right popup-for-callback-inside">
+        <div id="popup-form" class="mfp-hide map-block-right popup-for-callback-inside">
+          <form id="callback_form">
             <div class="feedback-title">Заказать звонок</div>
             <span class="feedback-title-text">Наши менеджеры проконсультируют вас по любому вопросу</span>
             <div class="ui-field ui-field-float">
@@ -127,12 +127,11 @@
             </div>
             <div class="ui-field ui-field-float">
               <label for="phone" class="ui-label-float">Ваш номер телефона</label>
-              <input type="text" name="phone" class="ui-input" id="phone" placeholder="+375(__) ___-__-__">
+              <input type="text" name="phone" class="ui-input mask-phone" id="phone" placeholder="+375(__) ___-__-__">
             </div>
             <div class="ui-field ui-field-float">
               <label for="textarea" class="ui-label-float">Ваше cообщение</label>
-              <textarea rows="5" type="textarea" name="textarea" class="ui-input "
-                placeholder="Не более 200 символов"></textarea>
+              <textarea rows="5" type="textarea" name="msg" class="ui-input" placeholder="Не более 200 символов"></textarea>
             </div>
             <span class="ui-checkbox-txt">Нажимая кнопку “Отправить” вы соглашаетесь с условиями <a
                 href="#">пользовательского
@@ -140,8 +139,8 @@
             <div class="ui-field">
               <button class="ui-btn ui-btn-block">Отправить</button>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </header>
 

@@ -18,6 +18,19 @@ $(document).ready(function() {
     });
 
 
+    $('form#callback_form').validate({
+        rules: {
+            phone: {
+                required: true,
+                telephone: true
+            },
+            msg: {
+                maxlength: 200
+            }
+        }
+    })
+
+
 });
 
 
