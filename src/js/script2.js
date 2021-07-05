@@ -9,6 +9,7 @@ $(document).ready(function() {
         $('.header-search-form').addClass('header-search-form-active');   
     });
 
+
     $(document).mouseup(function (e){ // событие клика по веб-документу
         var div = $('.header-search'); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
@@ -29,6 +30,26 @@ $(document).ready(function() {
             }
         }
     })
+
+
+
+
+    if ($('.fotorama-custom').length) {
+        FARBA.lazyLibraryLoad(
+            'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css',
+            () => {
+                $('.fotorama-custom').fotorama({
+                    maxwidth: '100%',
+                    nav: 'thumbs',
+                    thumbwidth: 168,
+                    thumbheight: 112,
+                    thumbmargin: 20,
+
+                })
+            }
+        )
+    }
 
 
 });
