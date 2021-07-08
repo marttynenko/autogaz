@@ -10,11 +10,20 @@ const minify = require('gulp-minify')
 const cssmin = require('gulp-cssmin')
     
 
-function styles(cb) {
-    return src('src/sass/style.scss')
-    	.pipe(sass({outputStyle: 'compact'}).on('error',sass.logError))
-        .pipe(dest('src/css'))
+// function styles(cb) {
+//     return src('src/sass/style.scss')
+//     	.pipe(sass({outputStyle: 'compact'}).on('error',sass.logError))
+//         .pipe(dest('src/css'))
         
+//     cb();
+// }
+
+function styles(cb) {
+    return src('src/sass/responsive.scss')
+        .pipe(sass({outputStyle: 'compact'}).on('error',sass.logError))
+        .pipe(concat('responsive.css'))
+        .pipe(cssmin())
+        .pipe(dest('src/css'))
     cb();
 }
 

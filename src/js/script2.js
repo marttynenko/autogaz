@@ -39,17 +39,32 @@ $(document).ready(function() {
             'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js',
             'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css',
             () => {
+                const ww = document.documentElement.clientWidth
                 $('.fotorama-custom').fotorama({
                     maxwidth: '100%',
                     nav: 'thumbs',
-                    thumbwidth: 168,
-                    thumbheight: 112,
-                    thumbmargin: 20,
-
+                    thumbwidth: ww > 992 ? 168 : 120,
+                    thumbheight: ww > 992 ? 112 : 85,
+                    thumbmargin: ww > 992 ? 20 : 10
                 })
             }
         )
     }
+
+    if ($('.slider-bottom').length) {
+		FARBA.lazyLibraryLoad(
+			'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js',
+			'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css',
+			() => {
+				const slickMain = $('.slider-bottom').slick({
+					// arrows: false,
+					// dots: true,
+					lazyLoad: 'ondemand',
+					// fade: true
+				})
+			}
+		)
+	}
 
 
 });

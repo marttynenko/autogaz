@@ -771,3 +771,17 @@
 .mfp-close-btn-in .mfp-close {
   color: #FFF;
 }
+
+
+.header-flex {
+  position: relative;
+}
+.header-search {
+  position: static;
+}
+.header-search-form {
+  left: 0;
+  width: auto;
+  right: 0;
+  top: 10px;
+}

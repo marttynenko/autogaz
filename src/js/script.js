@@ -186,13 +186,13 @@ jQuery(document).ready(function($){
 			'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js',
 			'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css',
 			() => {
+				const ww = document.documentElement.clientWidth
 				$('.fotorama').fotorama({
 					maxwidth: '100%',
 					nav: 'thumbs',
-					thumbwidth: 212,
-					thumbheight: 142,
-					thumbmargin: 15,
-
+					thumbwidth: ww > 992 ? 212 : 120,
+					thumbheight: ww > 992 ? 142 : 85,
+					thumbmargin: ww > 992 ? 15 : 10
 				})
 			}
 		)
