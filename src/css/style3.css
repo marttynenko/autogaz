@@ -1,0 +1,127 @@
+.promotion-wrapper {
+  margin-bottom: 70px;
+}
+
+.inner-z-index {
+  position: relative;
+  z-index: 5;
+}
+
+.promotion-card {
+  position: relative;
+  min-height: 474px;
+  padding: 26px;
+  padding-bottom: 60px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(51, 51, 51, 0.15);
+  border-radius: 30px;
+  margin-bottom: 30px;
+  transition: box-shadow .5s;
+}
+
+.promotion-card:hover {
+  box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.2);
+}
+
+.promotion-image {
+  display: inline-block;
+  margin-bottom: 33px;
+  max-width: 568px;
+  max-height: 252px;
+}
+
+.promotion-name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #465568;
+}
+
+.promotion-link {
+  position: absolute;
+  bottom: 36px;
+  left: 26px;
+}
+
+.main-promotion-wrapper {
+  padding-top: 60px;
+  padding-bottom: 70px;
+
+}
+
+.promotion-block-title {
+  margin-bottom: 70px;
+}
+
+
+.promotion-slider {
+  margin: 0 -15px;
+}
+
+.promotion-slider-item {
+  padding: 0 15px;
+}
+
+.promotion-slider>.slick-dots {
+  visibility: hidden;
+}
+
+.promotion-slider {
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.promotion-slider>.slick-arrow {
+  position: absolute;
+  top: 106px;
+  font-size: 0;
+  width: 37px;
+  height: 44px;
+  z-index: 98;
+  background-color: #627790;
+  opacity: 0.5;
+}
+
+
+.promotion-background {
+  top: 1550px;
+  position: absolute;
+  width: 100%;
+  height: 566px;
+  background-color: #EFF6FF;
+  opacity: 1;
+  z-index: 1;
+}
+
+
+@media (max-width:992px) {
+  .promotion-card {
+    padding: 20px;
+    min-height: 0px;
+  }
+
+  .promotion-link {
+    visibility: hidden;
+  }
+
+  .promotion-name {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width:576px) {
+  .promotion-card {
+    min-height: 0px;
+  }
+
+  .row-promotion {
+    display: block;
+  }
+
+  .col-6-promotion {
+    max-width: 100%;
+  }
+}
