@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AutoGaz</title>
+  <meta name="keywords" content="AutoGaz" />
+  <meta name="description" content="AutoGaz" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css"
+    integrity="sha256-xYfPd6G37xNB9z/uxMWam06Cvw/vYSq1TLKr1ayjaKE=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/style2.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/style3.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
+
+  <!--[if lt IE 9]>
+    <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+    "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+    "progress,section,time,video").split(',');
+    for (var i = 0; i < e.length; i++) {
+    document.createElement(e[i]);
+    }
+    </script>
+  <![endif]-->
+
+  <!-- favicons -->
+  <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="shortcut" sizes="40x40" href="images/favicon@2x.png" type="image/png">
+  <link rel="shortcut" sizes="80x80" href="images/favicon@4x.png" type="image/png"> -->
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper">
+
+    <header class="header" id="header">
+
+      <div class="inner">
+        <div class="header-flex flex align-justify valign-center">
+          <div class="logo header-logo">
+            <a href="/" class="logo-link flex valign-center align-center">
+              <img src="./images/logo.png" alt="AutoGaz" loading="lazy">
+            </a>
+          </div>
+
+          <nav class="main-menu header-menu">
+            <ul>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Модельный ряд</a></li>
+              <li><a href="#">Сервис</a></li>
+              <li><a href="#">Запчасти</a></li>
+              <li><a href="#">Кредит и лизинг</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-contacts">
+            <div class="header-contacts-top">
+              <a href="tel:+375447039817" class="header-contacts-phone">+375 44 703-98-17</a>
+              <div class="header-contacts-icons">
+                <svg class="sprite svg-header-contact">
+                  <use xlink:href="svg/svg/symbols.svg#viber"></use>
+                </svg><svg class="sprite svg-header-contact">
+                  <use xlink:href="svg/svg/symbols.svg#telegram"></use>
+                </svg>
+              </div>
+            </div>
+            <a class="popup-with-form header-contacts-callback mfp-popup" href="#popup-form">Заказать звонок</a>
+          </div>
+
+          <div class="header-search">
+            <div class="header-search-toggler"><svg class="sprite svg-search-toggler">
+                <use xlink:href="svg/svg/symbols.svg#searcher"></use>
+              </svg></div>
+            <div class="header-search-form">
+              <div class="header-search-toggler header-search-svg-inside"><svg class="sprite svg-search-toggler">
+                  <use xlink:href="svg/svg/symbols.svg#searcher"></use>
+                </svg></div>
+              <form>
+                <input type="text" class="header-search-input" placeholder="Введите фразу для поиска">
+              </form>
+
+              <div class="header-search-results">
+                <ul>
+                  <a href="">
+                    <li>
+                      Газель NEXT
+                    </li>
+                  </a>
+                  <a href="">
+                    <li>
+                      Газель CITY
+                    </li>
+                  </a>
+                  <a href="">
+                    <li>
+                      Газель Бизнес
+                    </li>
+                  </a>
+                </ul>
+              </div>
+
+              <div class="header-search-results-show">
+                <a href="#" class="header-search-results-more">Показать все результаты</a></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-for-callback mfp-hide">
+        <div id="popup-form" class="map-block-right popup-for-callback-inside">
+          <form id="callback_form">
+            <div class="feedback-title">Заказать звонок</div>
+            <span class="feedback-title-text">Наши менеджеры проконсультируют вас по любому вопросу</span>
+            <div class="ui-field ui-field-float">
+              <label for="name" class="ui-label-float">Ваше имя</label>
+              <input type="text" name="name" class="ui-input" placeholder="Иван">
+            </div>
+            <div class="ui-field ui-field-float">
+              <label for="phone" class="ui-label-float">Ваш номер телефона</label>
+              <input type="text" name="phone" class="ui-input mask-phone" id="phone" placeholder="+375(__) ___-__-__">
+            </div>
+            <div class="ui-field ui-field-float">
+              <label for="textarea" class="ui-label-float">Ваше cообщение</label>
+              <textarea rows="5" type="textarea" name="msg" class="ui-input"
+                placeholder="Не более 200 символов"></textarea>
+            </div>
+            <span class="ui-checkbox-txt">Нажимая кнопку “Отправить” вы соглашаетесь с условиями <a
+                href="#">пользовательского
+                соглашения</a></span>
+            <div class="ui-field">
+              <button class="ui-btn ui-btn-block">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="top-image">
+      <img src="./images/examples/top-image.png" alt="">
+    </div>
+    <div id="middle" class="middle">
+      <div class="inner">
+        <div class="breadcrumbs">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+          <span>Акции</span>
+        </div>
+
+        <div class="promotion-title">
+          <h1 class="ui-title">Акции</h1>
+        </div>
+        <div class="promotion-wrapper">
+          <div class="row row-promotion">
+            <div class="col-6 col-6-promotion">
+              <div class="promotion-card">
+                <a href="/" class="promotion-image"><img src=" ./images/examples/promotion1.jpg" alt="promo image"></a>
+                <a href="/" class="promotion-name">
+                  <p>Комплексная защита вашего автомобиля</p>
+                </a>
+                <a href="/" class="news-item-link link-bordered promotion-link">Читать подробнее</a>
+              </div>
+            </div>
+            <div class="col-6 col-6-promotion">
+              <div class="promotion-card">
+                <a href="/" class="promotion-image"><img src=" ./images/examples/promotion1.jpg" alt="promo image"></a>
+                <a href="/" class="promotion-name">
+                  <p>Комплексная защита вашего автомобиля</p>
+                </a>
+                <a href="/" class="news-item-link link-bordered promotion-link">Читать подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="row row-promotion">
+            <div class="col-6 col-6-promotion">
+              <div class="promotion-card">
+                <a href="/" class="promotion-image"><img src=" ./images/examples/promotion1.jpg" alt="promo image"></a>
+                <a href="/" class="promotion-name">
+                  <p>Комплексная защита вашего автомобиля от вашего автомобиля для вашего и чужого автомобиля
+                    Комплексная защита вашего чужого</p>
+                </a>
+                <a href="/" class="news-item-link link-bordered promotion-link">Читать подробнее</a>
+              </div>
+            </div>
+            <div class="col-6 col-6-promotion">
+              <div class="promotion-card">
+                <a href="/" class="promotion-image"><img src=" ./images/examples/promotion1.jpg" alt="promo image"></a>
+                <a href="/" class="promotion-name">
+                  <p>Комплексная защита вашего автомобиля</p>
+                </a>
+                <a href="/" class="news-item-link link-bordered promotion-link">Читать подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="row row-promotion">
+            <div class="col-6 col-6-promotion">
+              <div class="promotion-card">
+                <a href="/" class="promotion-image"><img src=" ./images/examples/promotion1.jpg" alt="promo image"></a>
+                <a href="/" class="promotion-name">
+                  <p>Комплексная защита вашего автомобиля</p>
+                </a>
+                <a href="/" class="news-item-link link-bordered promotion-link">Читать подробнее</a>
+              </div>
+            </div>
+            <div class="col-6 col-6-promotion">
+              <div class="promotion-card">
+                <a href="/" class="promotion-image"><img src=" ./images/examples/promotion1.jpg" alt="promo image"></a>
+                <a href="/" class="promotion-name">
+                  <p>Комплексная защита вашего автомобиля</p>
+                </a>
+                <a href="/" class="news-item-link link-bordered promotion-link">Читать подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-pgn">
+          <span class="ui-pgn-current">1</span>
+          <a href="#" class="ui-pgn-link">2</a>
+          <a href="#" class="ui-pgn-link">3</a>
+          <a href="#" class="ui-pgn-link">4</a>
+          <a href="#" class="ui-pgn-link">5</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <!--.inner-->
+    </div><!-- #middle -->
+    <footer id="footer" class="footer">
+      <div class="inner">
+        <div class="row">
+          <div class="col-footer-left">
+            <div class="footer-logo">
+              <a href="/" class="footer-logo-link"><img src="./images/footer-logo.png" alt="alt" loading="lazy"></a>
+            </div>
+
+            <div class="footer-copy">© 2021<br>ЗАО “ГомельАвтоГАЗ”<br>УНП 491337008</div>
+          </div>
+          <div class="col-footer-middle">
+            <div class="footer-models">
+              <div class="footer-title">Модельный ряд</div>
+              <ul class="footer-models-list">
+                <li><a href="#">Газель NEXT</a></li>
+                <li><a href="#">Соболь Бизнес</a></li>
+                <li><a href="#">VALDAI NEXT</a></li>
+                <li><a href="#">БЕЛАВА</a></li>
+                <li><a href="#">ГАЗ 4WD</a></li>
+                <li><a href="#">ГАЗель CITY</a></li>
+                <li><a href="#">ГАЗель Бизнес</a></li>
+                <li><a href="#">ГАЗон NEXT</a></li>
+                <li><a href="#">Авто с пробегом</a></li>
+              </ul>
+            </div>
+
+            <ul class="footer-menu">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Сервис</a></li>
+              <li><a href="#">Запчасти</a></li>
+              <li><a href="#">Кредит и лизинг</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <!--.col-->
+
+          <div class="col-footer-right">
+            <div class="footer-contacts">
+              <div class="footer-title">Наши контакты</div>
+              <div class="footer-contacts-item">
+                <svg class="sprite footer-contacts-icon">
+                  <use xlink:href="svg/svg/symbols.svg#phone"></use>
+                </svg>
+                <a href="tel:+375447039817">+375 44 703-98-17</a>
+                <svg class="sprite svg-inline">
+                  <use xlink:href="svg/svg/symbols.svg#viber"></use>
+                </svg>
+                <svg class="sprite svg-inline">
+                  <use xlink:href="svg/svg/symbols.svg#telegram"></use>
+                </svg>
+                <svg class="sprite svg-inline">
+                  <use xlink:href="svg/svg/symbols.svg#whatsapp"></use>
+                </svg>
+              </div>
+
+              <div class="footer-contacts-item">
+                <svg class="sprite footer-contacts-icon">
+                  <use xlink:href="svg/svg/symbols.svg#phone"></use>
+                </svg>
+                <a href="tel:+375447039817">+375 44 703-98-17</a>
+              </div>
+
+              <div class="footer-contacts-item">
+                <svg class="sprite footer-contacts-icon">
+                  <use xlink:href="svg/svg/symbols.svg#mail"></use>
+                </svg>
+                <a href="mailto:info@gomelavtogaz.by">info@gomelavtogaz.by</a>
+              </div>
+            </div>
+
+            <div class="footer-adres">
+              <div class="footer-title">Адрес</div>
+              <div class="footer-contacts-item">
+                <svg class="sprite footer-contacts-icon">
+                  <use xlink:href="svg/svg/symbols.svg#pin"></use>
+                </svg>
+                Республика Беларусь, 246010, г. Гомель, ул. Могилевская, 1Б
+              </div>
+            </div>
+          </div>
+          <!--.col-->
+        </div>
+      </div>
+    </footer><!-- #footer -->
+
+  </div><!-- #wrapper -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"
+    integrity="sha256-8+r5HibQ75BXeHHERCMXj4QWy+CzpRluiBsW4i7Kiww=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"
+    integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/script2.js"></script>
+  <script src="js/responsive.js"></script>
+
+</body>
+
+</html>
