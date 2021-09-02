@@ -1,5 +1,5 @@
 $('.promotion-slider').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
@@ -11,7 +11,7 @@ $('.promotion-slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false,
       }
     },
     {
