@@ -9,7 +9,6 @@
 
 .promotion-card {
   position: relative;
-  min-height: 474px;
   padding: 26px;
   padding-bottom: 60px;
   background: #FFFFFF;
@@ -31,12 +30,16 @@
 }
 
 .promotion-name {
+  display: block;
+  max-height: 88px;
+  overflow: hidden;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
   color: #465568;
+  margin-bottom: 10px;
 }
 
 .promotion-link {
@@ -53,7 +56,6 @@
 .promotion-block-title {
   margin-bottom: 70px;
 }
-
 
 
 .promotion-slider>.slick-dots {
@@ -97,6 +99,11 @@
   .promotion-card {
     padding: 20px;
     min-height: 0px;
+    border-radius: 10px;
+  }
+
+  .promotion-image {
+    margin-bottom: 10px;
   }
 
   .promotion-link {
@@ -105,19 +112,25 @@
 
   .promotion-name {
     font-size: 1.25rem;
-  }
-}
+    max-height: 75px;
 
-@media (max-width:576px) {
-  .promotion-card {
-    min-height: 0px;
   }
 
-  .row-promotion {
-    display: block;
-  }
+  @media (max-width:576px) {
+    .promotion-card {
+      min-height: 0px;
+      border-radius: 10px;
+    }
 
-  .col-6-promotion {
-    max-width: 100%;
+    .promotion-image {
+      margin-bottom: 10px;
+    }
+
+    .row-promotion {
+      display: block;
+    }
+
+    .col-6-promotion {
+      max-width: 100%;
+    }
   }
-}
