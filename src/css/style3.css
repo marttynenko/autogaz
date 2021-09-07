@@ -48,7 +48,6 @@
 .main-promotion-wrapper {
   padding-top: 60px;
   padding-bottom: 70px;
-
 }
 
 .promotion-block-title {
@@ -56,13 +55,6 @@
 }
 
 
-.promotion-slider {
-  margin: 0 -15px;
-}
-
-.promotion-slider-item {
-  padding: 0 15px;
-}
 
 .promotion-slider>.slick-dots {
   visibility: hidden;
@@ -75,8 +67,6 @@
   margin: 0;
 }
 
-
-
 .promotion-slider>.slick-arrow {
   position: absolute;
   margin: 0;
@@ -88,6 +78,7 @@
   z-index: 98;
   background-color: #627790;
   opacity: 0.5;
+  border-radius: 0;
 }
 
 
