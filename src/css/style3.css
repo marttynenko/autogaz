@@ -118,6 +118,10 @@
     border-radius: 10px;
   }
 
+  .promotion-block-title {
+    margin-bottom: 40px;
+  }
+
   .promotion-image {
     margin-bottom: 10px;
   }
@@ -141,6 +145,10 @@
     border-radius: 10px;
   }
 
+  .promotion-block-title {
+    margin-bottom: 30px;
+  }
+
   .promotion-image {
     margin-bottom: 10px;
   }
@@ -155,6 +163,10 @@
 }
 
 @media (max-width:487px) {
+  .promotion-block-title {
+    margin-bottom: 20px;
+  }
+
   .promotion-name {
     max-height: 44px;
   }
