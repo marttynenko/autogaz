@@ -67,6 +67,8 @@
   line-height: 0;
   padding: 0;
   margin: 0;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 .promotion-slider>.slick-arrow {
@@ -83,6 +85,23 @@
   border-radius: 0;
 }
 
+.promotion-slider>.slick-prev {
+  left: 10px;
+}
+
+.promotion-slider>.slick-next {
+  right: 10px;
+}
+
+.promotion-slider-item {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.promotion-slider-item-img {
+  display: block;
+  margin: 0 auto;
+}
 
 .promotion-background {
   top: 1550px;
