@@ -33,13 +33,16 @@
   display: block;
   max-height: 88px;
   overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.promotion-name-link {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
   color: #465568;
-  margin-bottom: 10px;
 }
 
 .promotion-link {
@@ -110,7 +113,7 @@
 
 @media (max-width:992px) {
   .promotion-card {
-    padding: 20px;
+    padding: 15px;
     min-height: 0px;
     border-radius: 10px;
   }
@@ -124,9 +127,11 @@
   }
 
   .promotion-name {
-    font-size: 1.25rem;
-    max-height: 75px;
+    max-height: 77px;
+  }
 
+  .promotion-name-link {
+    font-size: 1.25rem;
   }
 }
 
@@ -146,5 +151,20 @@
 
   .col-6-promotion {
     max-width: 100%;
+  }
+}
+
+@media (max-width:487px) {
+  .promotion-name {
+    max-height: 44px;
+  }
+
+  .promotion-name-link {
+    font-size: 1rem;
+  }
+
+  .promotion-card {
+    padding: 5px;
+    border-radius: 5px;
   }
 }
