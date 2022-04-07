@@ -357,8 +357,10 @@ $("#inplace_form").validate({
 });
 
 // Imask
-var element = document.getElementById("form11");
-var maskOptions = {
-  mask: /^\S*@?\S*$/,
-};
-var mask = IMask(element, maskOptions);
+if (document.getElementById("#form11")) {
+  var element = document.getElementById("form11");
+  var maskOptions = {
+    mask: /^\S*@?\S*$/,
+  };
+  var mask = IMask(element, maskOptions);
+}

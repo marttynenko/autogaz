@@ -8,8 +8,9 @@
   &-marks {
     margin-bottom: 60px;
     &-img {
-      text-align: center;
-      line-height: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 75px;
       margin-bottom: 30px;
       img {

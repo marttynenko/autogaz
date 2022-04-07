@@ -122,6 +122,12 @@ svg.svg-header-contact {
     padding-left: 40px;
     background: #252c36;
     border-bottom: 1px solid #858c96;
+    @media (max-width: 576px) {
+      padding-left: 0;
+      a {
+        padding: 8px 5px;
+      }
+    }
   }
 }
 
@@ -209,13 +215,16 @@ svg.svg-header-contact {
       flex: 0 0 50%;
       max-width: 50%;
     }
-    @media (max-width: 576px) {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
+    // @media (max-width: 576px) {
+    //   -ms-flex: 0 0 100%;
+    //   flex: 0 0 100%;
+    //   max-width: 100%;
+    // }
     @media (max-width: 992px) {
       background: transparent;
+    }
+    @media (max-width: 576px) {
+      padding-right: 5px;
     }
   }
 }
@@ -244,6 +253,10 @@ svg.svg-header-contact {
   line-height: 1.5;
   @media (max-width: 576px) {
     font-size: 12px;
+    word-wrap: break-word;
+  }
+  @media (max-width: 400px) {
+    font-size: 11px;
   }
 }
 
@@ -266,17 +279,16 @@ svg.svg-header-contact {
     transform: rotate(-45deg) translate(-50%, -50%);
     right: 10px;
     top: 35%;
-    // &:before {
-    //   content: "";
-    //   position: absolute;
-    //   transform: rotate(45deg);
-    //   top: 50%;
-    //   left: 50%;
-    //   width: 12px;
-    //   height: 12px;
-    //   padding: 3px;
-    //   border: 1px solid black;
-    // }
+    &:before {
+      content: "";
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(45deg);
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+    }
   }
 }
 .childs-in ul {
@@ -324,4 +336,9 @@ svg.svg-header-contact {
   transform: rotate(135deg) translate(-50%, -50%);
   right: 27px;
   top: 40%;
+}
+
+// Social links
+.ya-share2__list.ya-share2__list_direction_horizontal > .ya-share2__item {
+  width: initial;
 }
