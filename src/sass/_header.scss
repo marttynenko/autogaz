@@ -150,7 +150,7 @@ svg.svg-header-contact {
     line-height: 1.2;
     margin: 0;
     @media (max-width: 1170px) {
-      top: 60px;
+      top: 70px;
     }
     & li {
       padding: 16px 31px;
@@ -315,11 +315,8 @@ svg.svg-header-contact {
     width: 100%;
   }
 }
-// ! 🔥 🔥 🔥 🔥 🔥 🔥
+
 @media (max-width: 992px) {
-  .main-menu {
-    padding: 0 !important;
-  }
   .header-menu li a {
     position: relative;
   }
