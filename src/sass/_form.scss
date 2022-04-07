@@ -1,0 +1,188 @@
+.inplace {
+  &-header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    background: #f4f4f4;
+  }
+  &-marks {
+    margin-bottom: 60px;
+    &-img {
+      text-align: center;
+      line-height: 0;
+      height: 75px;
+      margin-bottom: 30px;
+      img {
+        max-height: 75px;
+      }
+    }
+  }
+  &-form {
+    margin-bottom: 40px;
+  }
+  &-field {
+    margin-bottom: 30px;
+    .col-md-4 {
+      @media (max-width: 992px) {
+        text-align: left;
+      }
+      text-align: right;
+    }
+    span.upload-error {
+      display: block;
+      position: absolute;
+      color: #cd201f;
+      font-size: 12px;
+    }
+    label {
+      font-size: 13px;
+      color: #1a212d;
+      span {
+        color: #cd201f;
+      }
+    }
+    input {
+      width: 100%;
+      height: 46px;
+      line-height: 16px;
+      font-size: 13px;
+      border-radius: 0;
+      border: 1px solid #dfe0e0;
+      box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+      background: #ffffff;
+      color: #1a212d;
+      padding: 14px 22px;
+    }
+    textarea {
+      width: 100%;
+      resize: none;
+      height: 247px;
+      overflow: auto;
+      padding: 14px 22px;
+      border-radius: 0;
+      border: 1px solid #dfe0e0;
+      box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+      background: #ffffff;
+      color: #1a212d;
+    }
+  }
+  &-contact {
+    &-tel {
+      font-size: 18px;
+      font-weight: 700;
+      margin-right: 5px;
+      white-space: nowrap;
+    }
+    &-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+// Social buttons style
+.ya-share2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+// checkbox
+.inplace-btn-submit {
+  display: block;
+  height: auto;
+  margin: 0;
+  padding: 11px 26px;
+  border: 2px solid #98b02e;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  background-color: #98b02e;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+.inplace-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox-form {
+  display: inline-block;
+  position: relative;
+  color: #8b8d9b;
+  margin-bottom: 5px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  line-height: 1;
+  span {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  span.upload-error {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    color: #cd201f;
+  }
+}
+span.checkbox-form-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.checkbox-form .error {
+  color: #fa5353;
+}
+.inplace-checkbox + .checkbox-form::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 1px;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #ebecf5;
+  border-radius: 0.25em;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.inplace-checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+/* hover checkbox */
+.inplace-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+// /* Active checkbox */
+.inplace-checkbox:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
