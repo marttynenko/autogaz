@@ -10,6 +10,11 @@
     &-img {
       text-align: center;
       line-height: 0;
+      height: 75px;
+      margin-bottom: 30px;
+      img {
+        max-height: 75px;
+      }
     }
   }
   &-form {
@@ -23,7 +28,7 @@
       }
       text-align: right;
     }
-    .upload-error:last-child {
+    span.upload-error {
       display: block;
       position: absolute;
       color: #cd201f;
@@ -63,13 +68,15 @@
   }
   &-contact {
     &-tel {
-      font-size: 16px;
-      margin-right: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      margin-right: 5px;
       white-space: nowrap;
     }
     &-title {
       font-size: 18px;
       font-weight: 700;
+      margin-bottom: 8px;
     }
   }
 }
@@ -127,14 +134,12 @@
   margin-bottom: 5px;
   cursor: pointer;
   margin-bottom: 40px;
-  span:first-child {
-    font-size: 13px;
-    font-weight: 600;
-  }
+  line-height: 1;
   span {
     font-size: 11px;
     font-weight: 400;
   }
+
   span.upload-error {
     position: absolute;
     bottom: -18px;
@@ -142,15 +147,19 @@
     color: #cd201f;
   }
 }
+span.checkbox-form-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
 .checkbox-form .error {
   color: #fa5353;
 }
-// .ui-checkbox + .checkbox-form {
-//   font-size: rem(14px);
-// }
 .inplace-checkbox + .checkbox-form::before {
   content: "";
   display: inline-block;
+  position: relative;
+  bottom: 1px;
   vertical-align: middle;
   width: 1em;
   height: 1em;
@@ -158,7 +167,7 @@
   flex-grow: 0;
   border: 1px solid #ebecf5;
   border-radius: 0.25em;
-  margin-right: 15px;
+  margin-right: 5px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;

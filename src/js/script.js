@@ -332,7 +332,7 @@ $("#inplace_form").validate({
       required: true,
     },
     form11: {
-      mail: true,
+      email: true,
       required: true,
     },
     checkbox_1: {
@@ -355,3 +355,10 @@ $("#inplace_form").validate({
   //   form.submit();
   // },
 });
+
+// Imask
+var element = document.getElementById("form11");
+var maskOptions = {
+  mask: /^\S*@?\S*$/,
+};
+var mask = IMask(element, maskOptions);
