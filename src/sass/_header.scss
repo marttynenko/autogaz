@@ -187,7 +187,9 @@ svg.svg-header-contact {
 .main-menu li > ul > .childs-in > ul {
   flex-direction: row;
   flex-wrap: wrap;
-  max-height: 500px;
+  // max-height: 500px;
+  min-height: 100%;
+  align-items: flex-start;
   overflow-y: auto;
   background: #fff;
   width: 882px;
