@@ -312,9 +312,7 @@ $("#inplace_form").validate({
     form5: {
       required: true,
     },
-    form6: {
-      required: true,
-    },
+
     form7: {
       lettersonly: true,
       required: true,
